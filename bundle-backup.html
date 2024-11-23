@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <title>Rogalia :: Early access</title>
+    <link rel="icon" type="image/png" href="favicon.ico?v2" />
+    <link rel="stylesheet" href="color-picker.css"/>
+
+<link rel="stylesheet" href="bundle.css?v=0.46.3.1f668a50">
+
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div id="tooltip"></div>
+    <div id="world">
+        <div id="canvas-container"></div>
+      <div id="world-icons">
+          <div id="news-icon" class="icon-button hidden" title="News"></div>
+          <div id="mute" class="icon-button" title="Mute"></div>
+          <div id="maximize" class="icon-button" title="Maximize"></div>
+      </div>
+      <div id="interface">
+	  <div id="player-avatar"></div>
+          <div id="new-mail" class="icon-button hidden animate-opacity" title="New mail"></div>
+          <div id="party"></div>
+	  <div id="target-container" class="hidden character-avatar-container"></div>
+          <div id="bg-state" class="hidden"></div>
+	  <div id="minimap-container">
+	      <div id="minimap">
+		  <canvas id="minimap-canvas"></canvas>
+		  <canvas id="minimap-objects-canvas"></canvas>
+	      </div>
+	  </div>
+	  <div id="controls-bar" class="button-bar"></div>
+	  <div id="effects"></div>
+	  <div id="warning"></div>
+	  <div id="announcement"></div>
+	  <div id="achievement-alerts"></div>
+          <div id="blinking-warning"></div>
+	  <div id="messages"></div>
+          <div id="combos"></div>
+	  <div id="hotbars-container">
+              <div id="hotbars-quickbars">
+                  <div id="hotbars-ctrl" class="quickbar-button"></div>
+                  <div id="hotbars-alt" class="quickbar-button"></div>
+              </div>
+              <div id="hotbars">
+	          <div id="main-action-button" class="button"></div>
+	          <div id="hotbars-wrapper">
+		      <div id="fight-hotbar" class="button-bar"></div>
+                      <div id="action-hotbar" class="button-bar"></div>
+	          </div>
+              </div>
+	  </div>
+      </div>
+    </div>
+    <script src="lib/sprintf.min.js"></script>
+    <script src="lib/lodash.min.js"></script>
+    <script src="lib/colorpicker.min.js"></script>
+    <script src="lib/m4.js"></script>
+    <script type="module" src="src/main.js?v=0.46.3.1f668a50"></script>
+  </body>
+</html>
